@@ -1,0 +1,1 @@
+# uppm-package-repository-openbsd-x86_64
