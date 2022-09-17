@@ -18,7 +18,7 @@ mkdir core
 
 for item in package/*.tar.xz
 do
-    run tar vxJf $item --strip-components=1 -C core
+    run "xzcat $item | tar vxf - --strip-components=1 -C core"
 done
 
 run core/bin/tree --dirsfirst -L 2
