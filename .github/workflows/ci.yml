@@ -22,4 +22,6 @@ jobs:
         with:
           mem: 2048
           box: generic/openbsd${{ matrix.version }}
-          run: ./test.sh
+          run: |
+            sudo pkg_add xz
+            ./test.sh
