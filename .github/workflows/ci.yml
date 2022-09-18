@@ -22,4 +22,4 @@ jobs:
         with:
           mem: 2048
           box: generic/openbsd${{ matrix.version }}
-          run: sudo pkg_add gtar xz && ./test.sh
+          run: sudo pkg_add gtar-- xz && ./test.sh
