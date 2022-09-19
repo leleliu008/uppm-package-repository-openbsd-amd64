@@ -31,7 +31,7 @@ export PATH="$PWD/core/bin:$PATH"
 
 printf '%s\n' "$PATH" | tr ':' '\n'
 
-for item in core/bin/* core/sbin/*
+for item in core/bin/*
 do
     case $item in
         core/bin/c_rehash)
